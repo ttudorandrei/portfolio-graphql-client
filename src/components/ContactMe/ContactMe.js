@@ -3,6 +3,7 @@ const ContactMe = ({ user }) => {
     <div className="container d-flex flex-column align-items-center mt-5">
       <h3>Contact</h3>
       <div className="container-fluid d-flex flex-wrap justify-content-evenly align-items-center mt-5">
+        {/* LinkedIn Logo */}
         <div className="text-center">
           <a
             href="https://linkedin.com/in/tudor-tocan"
@@ -14,6 +15,7 @@ const ContactMe = ({ user }) => {
           <div>LinkedIn</div>
         </div>
 
+        {/* GitHub Logo */}
         <div className="text-center">
           <a
             href="https://github.com/ttudorandrei"
@@ -25,29 +27,23 @@ const ContactMe = ({ user }) => {
           <div>GitHub</div>
         </div>
 
+        {/* Gmail Logo */}
         <div className="text-center">
           <a href="mailto:tudor.tocan@gmail.com">
-            <img
-              className="contact-img"
-              src="assets/img/gmail.png"
-              alt="gmail logo"
-            />
+            <img src="assets/img/gmail.png" alt="gmail logo" />
           </a>
           <div>GMail</div>
         </div>
-        <div className="contact--container">
-          <div className="text-center">
-            <a
-              href="/assets/doc/tudor-andrei-tocan-resume.pdf"
-              download="Tudor Andrei Tocan - Resume"
-            >
-              <img
-                src="assets/img/resume-icon.png"
-                alt="download y resume"
-              ></img>
-            </a>
-            <div>Download My Resume</div>
-          </div>
+
+        {/* Download Resume */}
+        <div className="text-center">
+          <a
+            href="/assets/doc/tudor-andrei-tocan-resume.pdf"
+            download="Tudor Andrei Tocan - Resume"
+          >
+            <img src="assets/img/resume-icon.png" alt="download y resume"></img>
+          </a>
+          <div>Download My Resume</div>
         </div>
       </div>
     </div>
