@@ -1,6 +1,9 @@
 const RepoCard = ({ repo }) => {
   return (
-    <div className="card mb-3">
+    <div
+      className="mt-3 text-center border border-danger"
+      style={{ width: "40rem" }}
+    >
       <a href={repo.repoUrl}>
         <img src="..." className="card-img-top" alt="..." />
       </a>
