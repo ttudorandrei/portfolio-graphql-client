@@ -1,11 +1,51 @@
 import "./App.css";
 import Portfolio from "./components/Portfolio";
 import NavigationBar from "./components/NavigationBar";
+import ContactMe from "./components/ContactMe/ContactMe";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 const App = () => {
   return (
     <div>
       <NavigationBar />
+      <AboutMe
+        user={{
+          username: "ttudorandrei",
+          profilePictureUrl:
+            "https://avatars.githubusercontent.com/u/76169655?v=4",
+          githubUrl: "https://github.com/ttudorandrei",
+          name: "Tudor Andrei Tocan",
+          company: null,
+          location: "Birmingham, UK",
+          portfolio: "https://ttudorandrei.github.io/personal_portfolio/",
+          email: null,
+          aboutMe:
+            "Full Stack Software Developer focused on building responsive, user-friendly web applications",
+          followers: 15,
+          publicRepos: 17,
+          createdAt: "2020-12-17T14:21:25Z",
+          updatedAt: "2021-07-14T17:14:53Z",
+        }}
+      />
+      <ContactMe
+        user={{
+          username: "ttudorandrei",
+          profilePictureUrl:
+            "https://avatars.githubusercontent.com/u/76169655?v=4",
+          githubUrl: "https://github.com/ttudorandrei",
+          name: "Tudor Andrei Tocan",
+          company: null,
+          location: "Birmingham, UK",
+          portfolio: "https://ttudorandrei.github.io/personal_portfolio/",
+          email: null,
+          aboutMe:
+            "Full Stack Software Developer focused on building responsive, user-friendly web applications",
+          followers: 15,
+          publicRepos: 17,
+          createdAt: "2020-12-17T14:21:25Z",
+          updatedAt: "2021-07-14T17:14:53Z",
+        }}
+      />
       <Portfolio
         repos={[
           {
