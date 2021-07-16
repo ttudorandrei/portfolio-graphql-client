@@ -2,9 +2,9 @@ const ContactMe = ({ user }) => {
   return (
     <div className="container d-flex flex-column align-items-center mt-5">
       <h3>Contact</h3>
-      <div className="container-fluid d-flex flex-wrap justify-content-evenly align-items-center mt-5">
+      <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-2">
         {/* LinkedIn Logo */}
-        <div className="text-center">
+        <div className="text-center mt-3">
           <a
             href="https://linkedin.com/in/tudor-tocan"
             rel="noreferrer"
@@ -16,7 +16,7 @@ const ContactMe = ({ user }) => {
         </div>
 
         {/* GitHub Logo */}
-        <div className="text-center">
+        <div className="text-center mt-3">
           <a
             href="https://github.com/ttudorandrei"
             rel="noreferrer"
@@ -28,7 +28,7 @@ const ContactMe = ({ user }) => {
         </div>
 
         {/* Gmail Logo */}
-        <div className="text-center">
+        <div className="text-center mt-3">
           <a href="mailto:tudor.tocan@gmail.com">
             <img src="assets/img/gmail.png" alt="gmail logo" />
           </a>
@@ -36,7 +36,7 @@ const ContactMe = ({ user }) => {
         </div>
 
         {/* Download Resume */}
-        <div className="text-center">
+        <div className="text-center mt-3">
           <a
             href="/assets/doc/tudor-andrei-tocan-resume.pdf"
             download="Tudor Andrei Tocan - Resume"
