@@ -1,23 +1,36 @@
+import { Flip } from "react-reveal";
+
 const RepoCard = ({ repo }) => {
   return (
-    <div
-      className="mt-3 text-center border border-danger"
-      style={{ width: "40rem" }}
-    >
-      <a href={repo.repoUrl}>
-        <img src="..." className="card-img-top" alt="..." />
-      </a>
-      <div className="card-body">
-        <h5 className="card-title">{repo.repoName}</h5>
-        <div className="card-text"> Created at {repo.createdAt}</div>
-        <div className="card-text">Description (not from api)</div>
-        <div className="card-text">
-          <small className="text-muted">
-            Technologies used: {repo.repoLanguage}
-          </small>
+    <Flip left>
+      <div
+        className="container d-flex  justify-content-center align-items-center mt-3"
+        style={{ width: "60rem", height: "18rem" }}
+      >
+        <a href={repo.repoUrl}>
+          <div class="col-md-4">
+            <img
+              src="assets/img/tech-blog-landing-page.png"
+              className="card-img-top"
+              alt="..."
+              style={{ width: "20rem", height: "auto" }}
+            />
+          </div>
+        </a>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{repo.repoName}</h5>
+            <div className="card-text"> Created at {repo.createdAt}</div>
+            <div className="card-text">Description (not from api)</div>
+            <div className="card-text">
+              <small className="card-text">
+                Technologies used: {repo.repoLanguage}
+              </small>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Flip>
   );
 };
 
