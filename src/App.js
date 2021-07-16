@@ -4,7 +4,7 @@ import NavigationBar from "./components/NavigationBar";
 
 const App = () => {
   return (
-    <div className="container-fluid d-flex flex-column justify-content-center border border-success align-items-center vw-100">
+    <div>
       <NavigationBar />
       <Portfolio
         repos={[
