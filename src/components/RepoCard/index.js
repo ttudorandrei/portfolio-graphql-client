@@ -1,6 +1,6 @@
 const RepoCard = ({ repo }) => {
   return (
-    <div className="card mb-3 w-50">
+    <div className="card mb-3">
       <a href={repo.repoUrl}>
         <img src="..." className="card-img-top" alt="..." />
       </a>
