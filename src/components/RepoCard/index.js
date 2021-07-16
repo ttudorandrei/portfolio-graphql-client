@@ -4,7 +4,7 @@ const RepoCard = ({ repo }) => {
   return (
     <Flip left>
       <div
-        className="container d-flex  justify-content-center align-items-center mt-3"
+        className="container d-flex justify-content-center align-items-center mt-3 project-card"
         style={{ width: "60rem", height: "18rem" }}
       >
         <a href={repo.repoUrl}>
@@ -17,7 +17,7 @@ const RepoCard = ({ repo }) => {
             />
           </div>
         </a>
-        <div class="col-md-8">
+        <div class="col-md-8 px-5">
           <div class="card-body">
             <h5 class="card-title">{repo.repoName}</h5>
             <div className="card-text"> Created at {repo.createdAt}</div>

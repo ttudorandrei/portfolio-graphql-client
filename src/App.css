@@ -15,3 +15,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.project-card {
+  background-color: rgb(241, 241, 241);
+}
