@@ -1,8 +1,10 @@
-import "./App.css";
 import Portfolio from "./components/Portfolio";
 import NavigationBar from "./components/NavigationBar";
 import ContactMe from "./components/ContactMe/ContactMe";
 import AboutMe from "./components/AboutMe/AboutMe";
+import PortfolioFooter from "./components/Footer";
+
+import "./App.css";
 
 const App = () => {
   return (
@@ -86,6 +88,7 @@ const App = () => {
           },
         ]}
       />
+      <PortfolioFooter />
     </div>
   );
 };
