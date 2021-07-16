@@ -1,5 +1,4 @@
 import "./App.css";
-import RepoCard from "./components/RepoCard";
 import Portfolio from "./components/Portfolio";
 import NavigationBar from "./components/NavigationBar";
 
