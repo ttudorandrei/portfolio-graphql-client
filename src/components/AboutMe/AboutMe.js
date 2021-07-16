@@ -3,31 +3,29 @@ import { Fade } from "react-reveal";
 const AboutMe = ({ user }) => {
   return (
     <Fade>
-      <div className="container d-flex flex-column align-items-center mt-5 vh-100">
-        <h3>About Me</h3>
-        <div className="container-fluid d-flex flex-wrap flex-column justify-content-evenly align-items-center mt-3">
-          <div className="border border-danger">
-            <img
-              className="about-me--profile-picture"
-              src={user.profilePictureUrl}
-              alt={user.name}
-            ></img>
+      <div className="container d-flex align-items-center flex-column mt-5 vh-100">
+        <div className="row container d-flex justify-content-evenly align-items-center a mt-5 h-75">
+          <div className="col-md-4 d-flex flex-lg-row align-items-center mt-5">
+            <div className="container d-flex flex-column align-items-center">
+              <img
+                className="about-me--profile-picture"
+                src={user.profilePictureUrl}
+                alt={user.name}
+              ></img>
+            </div>
           </div>
-          <div className="mt-5 w-75 border border-danger">
-            "Hello World!" My name is Tudor Andrei Tocan. I am a software
-            developer based in Birmingham, UK. I have a passion for technology
-            and everything around it. I like building responsive, user-friendly
-            web application focusing on User Experience, Responsiveness and
-            following the MVC architecture.
-          </div>
-          <div className="mt-5 w-75 border border-danger">
-            I am currently a confident user of technologies such as HTML, CSS,
-            JavaScript, Node.js, Handlebars and MySQL as well as libraries and
-            packages like Bootstrap, jQuery, Express.js, Sequelize and BCrypt.
-          </div>
-          <div className="mt-5 w-75 border border-danger">
-            If you are interested in a possible collaboration you can find my
-            contact info below.
+          <div className="col-md-8 d-flex align-items-center mt-5">
+            <div className="container d-flex flex-column">
+              <h1 className="w-75">"Hello World!"</h1>
+              <h3 className="w-75">
+                My Name is Tudor Andrei Tocan, a passionate Full-Stack developer
+                based in Birmingham, UK.
+              </h3>
+              <div className="mt-5 w-75">
+                If you are interested in a possible collaboration you can find
+                my contact info below.
+              </div>
+            </div>
           </div>
         </div>
       </div>
