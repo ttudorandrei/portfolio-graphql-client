@@ -2,7 +2,7 @@ const ContactMe = ({ user }) => {
   return (
     <div className="container d-flex flex-column align-items-center mt-5">
       <h3>Contact</h3>
-      <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-2">
+      <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-3">
         {/* LinkedIn Logo */}
         <div className="text-center mt-3">
           <a

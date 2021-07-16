@@ -2,7 +2,7 @@ const AboutMe = ({ user }) => {
   return (
     <div className="container d-flex flex-column align-items-center mt-5">
       <h3>About Me</h3>
-      <div className="container-fluid d-flex flex-wrap flex-column justify-content-evenly align-items-center mt-2">
+      <div className="container-fluid d-flex flex-wrap flex-column justify-content-evenly align-items-center mt-3">
         <div className="border border-danger">
           <img
             className="about-me--profile-picture"
