@@ -6,6 +6,8 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import PortfolioFooter from "./components/Footer";
 
 import "./App.css";
+import "./Spinner.css";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 const USER_QUERY = gql`
   query Query {
@@ -39,7 +41,11 @@ const App = () => {
   console.log(data);
 
   if (loading) {
-    return <div>Loading</div>;
+    return (
+      <div>
+        <LoadingSpinner />
+      </div>
+    );
   }
 
   if (error) {
