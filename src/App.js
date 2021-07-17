@@ -1,6 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio";
 import ContactMe from "./components/ContactMe/ContactMe";
 import AboutMe from "./components/AboutMe/AboutMe";
 import PortfolioFooter from "./components/Footer";
