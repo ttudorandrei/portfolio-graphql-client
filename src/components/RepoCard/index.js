@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 const RepoCard = ({ repo }) => {
   return (
     <Fade>
-      <div className="d-flex flex-wrap flex-row flex-sm-column justify-content-evenly align-items-center text-center mt-5 project-card">
+      <div className="d-flex flex-wrap flex-lg-row flex-sm-column justify-content-evenly align-items-center text-center mt-5 project-card">
         <div className="">
           <a href={repo.repoUrl}>
             <img
