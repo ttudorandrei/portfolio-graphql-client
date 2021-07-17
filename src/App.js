@@ -4,10 +4,11 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import ContactMe from "./components/ContactMe/ContactMe";
 import AboutMe from "./components/AboutMe/AboutMe";
 import PortfolioFooter from "./components/Footer";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 import "./App.css";
 import "./Spinner.css";
-import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 
 const USER_QUERY = gql`
   query Query {
@@ -49,7 +50,11 @@ const App = () => {
   }
 
   if (error) {
-    return <div>Error</div>;
+    return (
+      <div>
+        <ErrorMessage />
+      </div>
+    );
   }
 
   return (
