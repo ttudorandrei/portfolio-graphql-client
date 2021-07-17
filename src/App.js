@@ -8,7 +8,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="d-flex flex-column">
       <NavigationBar />
       <AboutMe
         user={{

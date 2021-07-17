@@ -1,5 +1,5 @@
 .about-me--profile-picture {
-  width: 15rem;
+  width: 20rem;
   height: auto;
   border-radius: 50%;
 }
@@ -18,4 +18,11 @@
 
 .project-card {
   background-color: rgb(241, 241, 241);
+  width: 60rem;
+  height: 18rem;
+  min-height: 250px;
+}
+
+.about-me--min-height {
+  min-height: 750px;
 }
