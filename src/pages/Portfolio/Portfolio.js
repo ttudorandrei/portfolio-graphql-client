@@ -1,4 +1,4 @@
-import RepoCard from "../RepoCard/RepoCard";
+import RepoCard from "../../components/RepoCard/RepoCard";
 
 const Portfolio = ({ repos }) => {
   return (

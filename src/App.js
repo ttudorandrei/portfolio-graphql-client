@@ -1,8 +1,8 @@
 import { gql, useQuery } from "@apollo/client";
 
-import Portfolio from "./components/Portfolio/Portfolio";
-import ContactMe from "./components/ContactMe/ContactMe";
-import AboutMe from "./components/AboutMe/AboutMe";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import ContactMe from "./pages/ContactMe/ContactMe";
+import AboutMe from "./pages/AboutMe/AboutMe";
 import PortfolioFooter from "./components/Footer";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
