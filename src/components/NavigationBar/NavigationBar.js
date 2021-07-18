@@ -31,7 +31,11 @@ const NavigationBar = () => {
                 className="nav-link active"
                 aria-current="page"
                 to="/about-me"
-                activeStyle={{ color: "red" }}
+                activeStyle={{
+                  color: "red",
+                  border: "1px solid red",
+                  borderRadius: "20px",
+                }}
               >
                 About Me
               </NavLink>
@@ -40,7 +44,11 @@ const NavigationBar = () => {
               <NavLink
                 className="nav-link active"
                 to="/contact-me"
-                activeStyle={{ color: "red" }}
+                activeStyle={{
+                  color: "red",
+                  border: "1px solid red",
+                  borderRadius: "20px",
+                }}
               >
                 Contact Me
               </NavLink>
@@ -49,7 +57,11 @@ const NavigationBar = () => {
               <NavLink
                 className="nav-link active"
                 to="/portfolio"
-                activeStyle={{ color: "red" }}
+                activeStyle={{
+                  color: "red",
+                  border: "1px solid red",
+                  borderRadius: "20px",
+                }}
               >
                 Portfolio
               </NavLink>
@@ -58,7 +70,11 @@ const NavigationBar = () => {
               <NavLink
                 className="nav-link active"
                 to="/resume"
-                activeStyle={{ color: "red" }}
+                activeStyle={{
+                  color: "red",
+                  border: "1px solid red",
+                  borderRadius: "20px",
+                }}
               >
                 Resume
               </NavLink>
