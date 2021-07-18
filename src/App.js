@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import ContactMe from "./pages/ContactMe/ContactMe";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import PortfolioFooter from "./components/Footer";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 import "./App.css";

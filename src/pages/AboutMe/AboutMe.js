@@ -29,9 +29,10 @@ const AboutMe = ({ user }) => {
                 amazing how they blend with ExpressJS and MongoDB or MySQL.
               </h3>
               <h5 className="mt-4 w-75">
-                Check out my Projects or my Resume if you want to find out more
-                or just go to Contact Me to get in touch, I'd love to hear from
-                you!
+                Check out my <a href="/portfolio">Projects</a> or my{" "}
+                <a href="/resume">Resume</a> if you want to find out more or
+                just go to <a href="/contact-me">Contact Me</a> to get in touch,
+                I'd love to hear from you!
               </h5>
             </div>
           </div>

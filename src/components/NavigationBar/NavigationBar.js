@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const NavigationBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid" id="navbar">
-        <a className="navbar-brand" href="/about-me">
+        <Link className="navbar-brand" to="/about-me">
           Tudor Andrei Tocan
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -19,28 +21,28 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active"
                 aria-current="page"
-                href="/about-me"
+                to="/about-me"
               >
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/contact-me">
+              <Link className="nav-link active" to="/contact-me">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/portfolio">
+              <Link className="nav-link active" to="/portfolio">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/resume">
+              <Link className="nav-link active" to="/resume">
                 Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
