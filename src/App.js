@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { Switch, Route } from "react-router-dom";
 
 import Portfolio from "./pages/Portfolio/Portfolio";
 import ContactMe from "./pages/ContactMe/ContactMe";
@@ -59,9 +60,20 @@ const App = () => {
 
   return (
     <div className="d-flex flex-column">
-      <AboutMe user={data.user} />
-      <ContactMe user={data.user} />
-      <Portfolio repos={data.repos} />
+      <Switch>
+        <Route exact path="/about-me">
+          <AboutMe user={data.user} />
+        </Route>
+        <Route exact path="/contact-me">
+          <ContactMe user={data.user} />
+        </Route>
+        <Route exact path="/portfolio">
+          <Portfolio repos={data.repos} />
+        </Route>
+        {/* <Route exact path="/resume">
+        <Resume />
+      </Route> */}
+      </Switch>
       <PortfolioFooter />
     </div>
   );
