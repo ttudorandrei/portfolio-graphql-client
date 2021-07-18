@@ -4,7 +4,7 @@ const AboutMe = ({ user }) => {
   return (
     <Fade>
       <div
-        className="container d-flex align-items-center flex-column mt-5 about-me--min-height vh-100"
+        className="container d-flex align-items-center flex-column mt-5 h-100"
         id="aboutMe"
       >
         <div className="row container d-flex justify-content-evenly align-items-center a mt-5 h-75">
@@ -20,17 +20,19 @@ const AboutMe = ({ user }) => {
           <div className="col-md-8 d-flex align-items-center mt-5">
             <div className="container d-flex flex-column align-items-center">
               <h1 className="w-75">"Hello World!"</h1>
-              <h3 className="w-75">
+              <h5 className="mt-3 w-50">
                 My Name is Tudor Andrei Tocan, a passionate Full-Stack developer
                 based in Birmingham, UK.
+              </h5>
+              <h3 className="mt-4 w-100">
+                I really like JavaScript, I love ReactJS and I think it's
+                amazing how they blend with ExpressJS and MongoDB or MySQL.
               </h3>
-              <div className="mt-5 w-75">
-                If you are interested in a possible collaboration you can find
-                my contact info below. If you are interested in a possible
-                collaboration you can find my contact info below. If you are
-                interested in a possible collaboration you can find my contact
-                info below.
-              </div>
+              <h5 className="mt-4 w-75">
+                Check out my Projects or my Resume if you want to find out more
+                or just go to Contact Me to get in touch, I'd love to hear from
+                you!
+              </h5>
             </div>
           </div>
         </div>

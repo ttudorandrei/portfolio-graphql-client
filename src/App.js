@@ -61,6 +61,9 @@ const App = () => {
   return (
     <div className="d-flex flex-column">
       <Switch>
+        <Route exact path="/">
+          <AboutMe user={data.user} />
+        </Route>
         <Route exact path="/about-me">
           <AboutMe user={data.user} />
         </Route>
@@ -74,7 +77,6 @@ const App = () => {
         <Resume />
       </Route> */}
       </Switch>
-      <PortfolioFooter />
     </div>
   );
 };
