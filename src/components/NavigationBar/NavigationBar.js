@@ -2,10 +2,18 @@
 import { NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
-  // const [active, setActive] = useState(false);
-  // onClick={() => {
-  //   setActive("resume");
-  // }}
+  const activeStyleSettings = {
+    color: "red",
+    border: "1px solid red",
+    borderRadius: "20px",
+  };
+
+  const navbarLinks = [
+    { link: "/about-me", name: "About Me" },
+    { link: "/contact-me", name: "Contact Me" },
+    { link: "/portfolio", name: "Portfolio" },
+    { link: "/resume", name: "Resume" },
+  ];
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,59 +34,20 @@ const NavigationBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                aria-current="page"
-                to="/about-me"
-                activeStyle={{
-                  color: "red",
-                  border: "1px solid red",
-                  borderRadius: "20px",
-                }}
-              >
-                About Me
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                to="/contact-me"
-                activeStyle={{
-                  color: "red",
-                  border: "1px solid red",
-                  borderRadius: "20px",
-                }}
-              >
-                Contact Me
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                to="/portfolio"
-                activeStyle={{
-                  color: "red",
-                  border: "1px solid red",
-                  borderRadius: "20px",
-                }}
-              >
-                Portfolio
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                to="/resume"
-                activeStyle={{
-                  color: "red",
-                  border: "1px solid red",
-                  borderRadius: "20px",
-                }}
-              >
-                Resume
-              </NavLink>
-            </li>
+            {navbarLinks.map((link) => {
+              return (
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link active"
+                    aria-current="page"
+                    to={link.link}
+                    activeStyle={activeStyleSettings}
+                  >
+                    {link.name}
+                  </NavLink>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
