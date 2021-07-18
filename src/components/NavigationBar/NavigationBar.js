@@ -36,7 +36,7 @@ const NavigationBar = () => {
           <ul className="navbar-nav">
             {navbarLinks.map((link) => {
               return (
-                <li className="nav-item">
+                <li className="nav-item" key={link.name}>
                   <NavLink
                     className="nav-link active"
                     aria-current="page"
