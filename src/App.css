@@ -15,6 +15,26 @@ body {
   height: auto;
 }
 
+.navbar-font-styles {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  z-index: 1;
+  background-color: rgba(66, 39, 90, 0.62);
+  border-radius: 15px;
+}
+
+.neg-zi {
+  z-index: -1;
+}
+
+.pos-zi {
+  z-index: 2;
+}
+
+.brand-style {
+  font-size: 20px;
+}
+
 .about-me--profile-picture {
   width: 20rem;
   height: auto;
@@ -46,4 +66,8 @@ body {
 
 .highlight {
   color: red;
+}
+
+.error-message-style {
+  font-size: 20px;
 }

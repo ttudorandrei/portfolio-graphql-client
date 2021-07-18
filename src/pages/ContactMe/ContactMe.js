@@ -3,10 +3,7 @@ import { Fade } from "react-reveal";
 const ContactMe = ({ user }) => {
   return (
     <Fade>
-      <div
-        className="container d-flex flex-column align-items-center mt-5"
-        id="contactMe"
-      >
+      <div className="container d-flex flex-column align-items-center mt-5 neg-zi">
         <h3>Contact</h3>
         <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-3">
           {/* LinkedIn Logo */}

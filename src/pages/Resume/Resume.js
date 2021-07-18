@@ -2,7 +2,7 @@ import { Fade } from "react-reveal";
 
 const Resume = ({ user }) => {
   return (
-    <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75">
+    <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75 neg-zi">
       <Fade>
         <div className="d-flex flex-column">
           <h2 className="align-self-center">Technologies I use</h2>
