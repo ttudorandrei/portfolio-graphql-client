@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
+// import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
+  // const [active, setActive] = useState(false);
+  // onClick={() => {
+  //   setActive("resume");
+  // }}
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid" id="navbar">
-        <Link className="navbar-brand" to="/about-me">
+        <NavLink className="navbar-brand" to="/about-me">
           Tudor Andrei Tocan
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,28 +27,41 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link
+              <NavLink
                 className="nav-link active"
                 aria-current="page"
                 to="/about-me"
+                activeStyle={{ color: "red" }}
               >
                 About Me
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/contact-me">
-                Contact
-              </Link>
+              <NavLink
+                className="nav-link active"
+                to="/contact-me"
+                activeStyle={{ color: "red" }}
+              >
+                Contact Me
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/portfolio">
+              <NavLink
+                className="nav-link active"
+                to="/portfolio"
+                activeStyle={{ color: "red" }}
+              >
                 Portfolio
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/resume">
+              <NavLink
+                className="nav-link active"
+                to="/resume"
+                activeStyle={{ color: "red" }}
+              >
                 Resume
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

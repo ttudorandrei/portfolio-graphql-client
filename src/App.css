@@ -26,3 +26,7 @@
 .about-me--min-height {
   min-height: 750px;
 }
+
+.highlight {
+  color: red;
+}
