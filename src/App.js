@@ -9,6 +9,7 @@ import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 import "./App.css";
 import "./Spinner.css";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
+import Resume from "./pages/Resume/Resume";
 
 const USER_QUERY = gql`
   query Query {
@@ -56,26 +57,6 @@ const App = () => {
   }
 
   return (
-    // <div className="d-flex flex-column">
-    //   <Switch>
-    //     <Route exact path="/">
-    //       <AboutMe user={data.user} />
-    //     </Route>
-    //     <Route exact path="/about-me">
-    //       <AboutMe user={data.user} />
-    //     </Route>
-    //     <Route exact path="/contact-me">
-    //       <ContactMe user={data.user} />
-    //     </Route>
-    //     <Route exact path="/portfolio">
-    //       <Portfolio repos={data.repos} />
-    //     </Route>
-    //     {/* <Route exact path="/resume">
-    //     <Resume />
-    //   </Route> */}
-    //   </Switch>
-    // </div>
-
     <div className="d-flex flex-column">
       <Switch>
         <Route exact path="/">
@@ -90,9 +71,9 @@ const App = () => {
         <Route exact path="/portfolio">
           <Portfolio repos={data.repos} />
         </Route>
-        {/* <Route exact path="/resume">
-      <Resume />
-    </Route> */}
+        <Route exact path="/resume">
+          <Resume />
+        </Route>
       </Switch>
     </div>
   );
