@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
   const activeStyleSettings = {
-    color: "red",
-    border: "1px solid red",
+    color: "#fff",
+    border: "1px solid #fff",
     borderRadius: "20px",
   };
 
@@ -16,8 +16,8 @@ const NavigationBar = () => {
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid" id="navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark  p-3">
+      <div className="container" id="navbar">
         <NavLink className="navbar-brand" to="/about-me">
           Tudor Andrei Tocan
         </NavLink>

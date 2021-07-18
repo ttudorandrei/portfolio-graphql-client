@@ -6,6 +6,15 @@ a:active {
   color: inherit;
 }
 
+body {
+  background-image: linear-gradient(#42275a, #734b6d);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+}
+
 .about-me--profile-picture {
   width: 20rem;
   height: auto;
