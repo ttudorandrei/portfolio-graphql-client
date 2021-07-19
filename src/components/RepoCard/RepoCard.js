@@ -1,4 +1,7 @@
 import { Fade } from "react-reveal";
+import Moment from "react-moment";
+
+import formatRepoNameName from "../../utils/helpers";
 
 const RepoCard = ({ repo }) => {
   return (
@@ -16,8 +19,11 @@ const RepoCard = ({ repo }) => {
         </div>
 
         <div className="p-2">
-          <h5 className="card-title">{repo.repoName}</h5>
-          <div className="card-text"> Created at {repo.createdAt}</div>
+          <h5 className="card-title">{formatRepoNameName(repo.repoName)}</h5>
+          <div className="card-text">
+            Created at{" "}
+            <Moment format="YYYY-MM-DD, HH:mm">{repo.createdAt}</Moment>
+          </div>
           <div className="card-text">Description (not from api)</div>
           <div className="card-text">
             <small className="card-text">
