@@ -42,16 +42,8 @@ body {
   border-radius: 50%;
 }
 
-.portfolio-footer--container {
-  min-height: 60px;
-  position: relative;
-}
-
 .portfolio-footer--text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 15px;
 }
 
 .project-card {

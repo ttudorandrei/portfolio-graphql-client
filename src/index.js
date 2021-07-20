@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import App from "./App";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
+import PortfolioFooter from "./components/Footer/index";
 
 import "./index.css";
 
@@ -19,6 +20,7 @@ ReactDOM.render(
       <ApolloProvider client={client}>
         <NavigationBar />
         <App />
+        <PortfolioFooter />
       </ApolloProvider>
     </Router>
   </React.StrictMode>,
