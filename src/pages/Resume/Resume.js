@@ -1,4 +1,4 @@
-import { Fade } from "react-reveal";
+import { Bounce, Fade } from "react-reveal";
 
 const Resume = ({ user }) => {
   const technologies = [
@@ -17,28 +17,32 @@ const Resume = ({ user }) => {
   return (
     <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75 neg-zi">
       <Fade>
-        <h3 className="text-center">Have a look at the technologies I use</h3>
-        <div className="d-flex flex-column">
+        <h3 className="text-center highlight">
+          Have a look at the technologies I use
+        </h3>
+        {/* list of tech I use */}
+        <div className="d-flex flex-column mt-3">
           {technologies.map((technology) => {
-            return <h4 className="text-center">{technology.name}</h4>;
+            return (
+              <Bounce left>
+                <h4 className="text-center">{technology.name}</h4>
+              </Bounce>
+            );
           })}
         </div>
-        <h3 className="text-center">
-          <div> Or download my Resume</div>
+        <h3 className="text-center mt-5">
+          <div className="highlight"> Or download my Resume</div>
         </h3>
-        <div className="text-center">
-          {/* Download Resume */}
-          <div className="text-center mt-3">
-            <a
-              href="../assets/doc/tudor-andrei-tocan-resume.pdf"
-              download="Tudor Andrei Tocan - Resume"
-            >
-              <img
-                src="assets/img/resume-icon.png"
-                alt="download y resume"
-              ></img>
-            </a>
-          </div>
+        <div className="d-flex justify-content-center mt-3">
+          {/* Download Resume Icon*/}
+          <a
+            href="../assets/doc/tudor-andrei-tocan-resume.pdf"
+            download="Tudor Andrei Tocan - Resume"
+            className="text-center"
+          >
+            <img src="assets/img/resume-icon.png" alt="download y resume"></img>
+            <div className="highlight">Download Here</div>
+          </a>
         </div>
       </Fade>
     </div>
