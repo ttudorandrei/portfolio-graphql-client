@@ -1,21 +1,44 @@
 import { Fade } from "react-reveal";
 
 const Resume = ({ user }) => {
+  const technologies = [
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "ReactJS" },
+    { name: "jQuery" },
+    { name: "NodeJS" },
+    { name: "ExpressJS" },
+    { name: "MySQL" },
+    { name: "MongoDB" },
+    { name: "GraphQL" },
+  ];
+
   return (
     <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75 neg-zi">
       <Fade>
+        <h3 className="text-center">Have a look at the technologies I use</h3>
         <div className="d-flex flex-column">
-          <h2 className="align-self-center">Technologies I use</h2>
-          <h3 className="align-self-end mt-5 w-25">HTML</h3>
-          <h3 className="align-self-end w-75">CSS</h3>
-          <h3 className="align-self-end w-50">JavaScript</h3>
-          <h3 className="align-self-center w-25">ReactJS</h3>
-          <h3 className="align-self-end w-25">jQuery</h3>
-          <h3 className="align-self-end w-75">NodeJS</h3>
-          <h3 className="align-self-end w-50">ExpressJS</h3>
-          <h3 className="align-self-center w-75">MySQL</h3>
-          <h3 className="align-self-end w-25">MongoDB</h3>
-          <h3 className="align-self-center">GraphQL</h3>
+          {technologies.map((technology) => {
+            return <h4 className="text-center">{technology.name}</h4>;
+          })}
+        </div>
+        <h3 className="text-center">
+          <div> Or download my Resume</div>
+        </h3>
+        <div className="text-center">
+          {/* Download Resume */}
+          <div className="text-center mt-3">
+            <a
+              href="../assets/doc/tudor-andrei-tocan-resume.pdf"
+              download="Tudor Andrei Tocan - Resume"
+            >
+              <img
+                src="assets/img/resume-icon.png"
+                alt="download y resume"
+              ></img>
+            </a>
+          </div>
         </div>
       </Fade>
     </div>
