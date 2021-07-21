@@ -2,7 +2,6 @@ import { Fade } from "react-reveal";
 import Moment from "react-moment";
 
 import formatRepoName from "../../utils/helpers/formatRepoName";
-import formatRepoNameForImage from "../../utils/helpers/formatRepoName";
 
 const RepoCard = ({ repo }) => {
   return (
@@ -14,7 +13,7 @@ const RepoCard = ({ repo }) => {
               src={`assets/img/${repo.repoName}.png`}
               className="card-img-top"
               alt="..."
-              style={{ width: "200px", height: "auto" }}
+              style={{ width: "40%", height: "auto" }}
             />
           </a>
         </div>
