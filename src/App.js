@@ -31,6 +31,8 @@ const USER_QUERY = gql`
     repos {
       repoName
       repoUrl
+      deployedUrl
+      repoDescription
       repoLanguage
       createdAt
     }
