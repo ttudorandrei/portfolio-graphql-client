@@ -2,7 +2,7 @@ import RepoCard from "../../components/RepoCard/RepoCard";
 
 const Portfolio = ({ repos }) => {
   return (
-    <div className="container d-flex flex-column align-items-center mt-5 neg-zi">
+    <div className="container d-flex flex-column align-items-center mt-5">
       <h3>My Projects</h3>
       <div className="container-fluid d-flex flex-wrap justify-content-evenly align-items-center mt-3">
         {repos.map((repo) => {

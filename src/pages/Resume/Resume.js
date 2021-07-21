@@ -15,7 +15,7 @@ const Resume = ({ user }) => {
   ];
 
   return (
-    <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75 neg-zi">
+    <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75">
       <Fade>
         <h3 className="text-center highlight">
           Have a look at the technologies I use
@@ -24,7 +24,7 @@ const Resume = ({ user }) => {
         <div className="d-flex flex-column mt-3">
           {technologies.map((technology) => {
             return (
-              <Bounce left>
+              <Bounce left cascade>
                 <h4 className="text-center">{technology.name}</h4>
               </Bounce>
             );
@@ -40,7 +40,10 @@ const Resume = ({ user }) => {
             download="Tudor Andrei Tocan - Resume"
             className="text-center"
           >
-            <img src="assets/img/resume-icon.png" alt="download y resume"></img>
+            <img
+              src="assets/img/resume-icon.png"
+              alt="download my resume"
+            ></img>
             <div className="highlight">Download Here</div>
           </a>
         </div>
