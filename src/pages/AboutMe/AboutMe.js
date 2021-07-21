@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 const AboutMe = ({ user }) => {
   return (
     <Fade>
-      <div className="container d-flex align-items-center flex-column mt-5 h-100 neg-zi">
+      <div className="container d-flex align-items-center flex-column my-5 h-100">
         <div className="row container d-flex justify-content-evenly align-items-center a mt-5 h-75">
           <div className="col-md-4 d-flex flex-lg-row align-items-center mt-5">
             <div className="container d-flex flex-column align-items-center">
@@ -33,7 +33,7 @@ const AboutMe = ({ user }) => {
                 <span className="highlight"> MySQL</span> as the database but
                 I`m always down to learning new technologies.
               </h3>
-              <h5 className="mt-4 w-75">
+              <h5 className="my-4 w-75">
                 Check out my
                 <a href="/portfolio">
                   <span className="highlight"> Projects </span>

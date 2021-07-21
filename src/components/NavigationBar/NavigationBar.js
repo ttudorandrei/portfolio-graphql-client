@@ -19,7 +19,7 @@ const NavigationBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark p-3">
       <div className="container" id="navbar">
         <NavLink className="navbar-brand brand-style" to="/about-me">
-          Tudor Andrei Tocan
+          <div className="highlight">Tudor Andrei Tocan</div>
         </NavLink>
         <button
           className="navbar-toggler"
