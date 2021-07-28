@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 const NavigationBar = () => {
   const activeStyleSettings = {
     color: "#fff",
-    border: "1px solid #734b6d",
     borderRadius: "20px",
     backgroundColor: "#42275a",
+    boxShadow:
+      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   };
 
   const navbarLinks = [
@@ -36,7 +37,10 @@ const NavigationBar = () => {
           <ul className="navbar-nav navbar-font-styles">
             {navbarLinks.map((link) => {
               return (
-                <li className="nav-item text-center" key={link.name}>
+                <li
+                  className="nav-item text-center navbar-button-style"
+                  key={link.name}
+                >
                   <NavLink
                     className="nav-link active"
                     aria-current="page"
