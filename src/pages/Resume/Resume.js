@@ -1,7 +1,8 @@
 import { Bounce, Fade } from "react-reveal";
 
-const Resume = ({ user }) => {
+const Resume = () => {
   const technologies = [
+    { name: "Googling" },
     { name: "HTML" },
     { name: "CSS" },
     { name: "JavaScript" },

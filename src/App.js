@@ -6,8 +6,8 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
-import "./App.css";
 import "./Spinner.css";
+import "./App.css";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import Resume from "./pages/Resume/Resume";
 
