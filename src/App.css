@@ -70,3 +70,9 @@ body {
 .dark-font {
   color: black;
 }
+
+.repo-card {
+  background-image: linear-gradient(rgb(116, 116, 116), rgb(173, 173, 173));
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
