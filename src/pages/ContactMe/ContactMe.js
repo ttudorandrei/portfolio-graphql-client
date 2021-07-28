@@ -1,4 +1,5 @@
 import { Fade } from "react-reveal";
+import ContactMeForm from "../../components/ContactMeForm/ContactMeForm";
 
 const ContactMe = ({ user }) => {
   return (
@@ -7,40 +8,7 @@ const ContactMe = ({ user }) => {
         <h3 className="highlight">Contact</h3>
         <div className="container d-flex flex-column w-50 justify-content-evenly mt-3">
           {/* form should go here */}
-          <form>
-            <div className="mb-3">
-              <input
-                type="name"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Type in your name"
-              />
-            </div>
-            <div className="mb-3">
-              <input
-                type="email"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Type in your email address"
-              />
-            </div>
-            <div className="mb-3">
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Type in your message"
-              ></textarea>
-            </div>
-            <div className="text-center mt-2">
-              <button
-                type="submit"
-                className="btn btn-primary highlight border border-light w-50"
-              >
-                Send me a message
-              </button>
-            </div>
-          </form>
+          <ContactMeForm />
         </div>
         <h4 className="highlight mt-5">
           Or you can check out my social media accounts
