@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio-graphql-client/static/css/main.e99ec926.chunk.css",
+    "main.js": "/portfolio-graphql-client/static/js/main.36c1f52f.chunk.js",
+    "main.js.map": "/portfolio-graphql-client/static/js/main.36c1f52f.chunk.js.map",
+    "runtime-main.js": "/portfolio-graphql-client/static/js/runtime-main.3de99251.js",
+    "runtime-main.js.map": "/portfolio-graphql-client/static/js/runtime-main.3de99251.js.map",
+    "static/js/2.a8e487ad.chunk.js": "/portfolio-graphql-client/static/js/2.a8e487ad.chunk.js",
+    "static/js/2.a8e487ad.chunk.js.map": "/portfolio-graphql-client/static/js/2.a8e487ad.chunk.js.map",
+    "index.html": "/portfolio-graphql-client/index.html",
+    "static/css/main.e99ec926.chunk.css.map": "/portfolio-graphql-client/static/css/main.e99ec926.chunk.css.map",
+    "static/js/2.a8e487ad.chunk.js.LICENSE.txt": "/portfolio-graphql-client/static/js/2.a8e487ad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3de99251.js",
+    "static/js/2.a8e487ad.chunk.js",
+    "static/css/main.e99ec926.chunk.css",
+    "static/js/main.36c1f52f.chunk.js"
+  ]
+}
