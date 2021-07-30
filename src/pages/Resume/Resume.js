@@ -1,35 +1,16 @@
-import { Bounce, Fade } from "react-reveal";
+import { Fade } from "react-reveal";
+import ResumeSkillsItem from "../../components/ResumeSkillsItem/ResumeSkillsItem";
 
 const Resume = () => {
-  const technologies = [
-    { name: "Googling" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "JavaScript" },
-    { name: "ReactJS" },
-    { name: "jQuery" },
-    { name: "NodeJS" },
-    { name: "ExpressJS" },
-    { name: "MySQL" },
-    { name: "MongoDB" },
-    { name: "GraphQL" },
-  ];
-
   return (
     <div className="position-absolute top-50 start-50 translate-middle d-flex flex-column w-75">
       <Fade>
         <h3 className="text-center highlight">
-          Have a look at the technologies I use
+          Have a look at the skills I have
         </h3>
         {/* list of tech I use */}
         <div className="d-flex flex-column mt-3">
-          {technologies.map((technology) => {
-            return (
-              <Bounce left cascade>
-                <h4 className="text-center">{technology.name}</h4>
-              </Bounce>
-            );
-          })}
+          <ResumeSkillsItem />
         </div>
         <h3 className="text-center mt-5">
           <div className="highlight"> Or download my Resume</div>
