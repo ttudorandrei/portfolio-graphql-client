@@ -1,19 +1,17 @@
 import { Fade } from "react-reveal";
 import ContactMeForm from "../../components/ContactMeForm/ContactMeForm";
 
-const ContactMe = ({ user }) => {
+const ContactMe = () => {
   return (
-    <div className="position-absolute top-50 start-50 translate-middle container d-flex flex-column align-items-center my-5">
-      <h3 className="highlight">Contact</h3>
-      <Fade>
-        <div className="container d-flex flex-column w-50 justify-content-evenly mt-3">
-          {/* form should go here */}
-          <ContactMeForm />
-        </div>
-        <h4 className="highlight mt-5">
-          Or you can check out my social media accounts
-        </h4>
-        <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-5">
+    <div className="position-absolute top-50 start-50 translate-middle container d-flex align-items-center flex-column my-5 w-100 h-100">
+      <h3 className="highlight mt-5 ">Contact</h3>
+      {/* contact-me form*/}
+      <ContactMeForm />
+      <h4 className="highlight mt-5">
+        Or you can check out my social media accounts
+      </h4>
+      <div className="container d-flex flex-column flex-md-row justify-content-evenly mt-5">
+        <Fade>
           {/* LinkedIn Logo */}
           <a
             href="https://linkedin.com/in/tudor-tocan"
@@ -45,8 +43,8 @@ const ContactMe = ({ user }) => {
               <div>GMail</div>
             </div>
           </a>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </div>
   );
 };
