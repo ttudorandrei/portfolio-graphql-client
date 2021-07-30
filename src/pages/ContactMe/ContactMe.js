@@ -19,7 +19,10 @@ const ContactMe = () => {
             target="_blank"
           >
             <div className="text-center mt-5">
-              <img src="./public/assets/img/linkedin.png" alt="linkedin logo" />
+              <img
+                src="https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/linkedin.png"
+                alt="linkedin logo"
+              />
               <div>LinkedIn</div>
             </div>
           </a>
@@ -32,7 +35,7 @@ const ContactMe = () => {
           >
             <div className="text-center mt-5">
               <img
-                src="./public/assets/img/github-logo-dark.png"
+                src="https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/github-logo-dark.png"
                 alt="github logo"
               />
               <div>GitHub</div>
@@ -42,7 +45,10 @@ const ContactMe = () => {
           {/* Gmail Logo */}
           <a href="mailto:tudor.tocan@gmail.com">
             <div className="text-center my-5">
-              <img src="./public/assets/img/gmail.png" alt="gmail logo" />
+              <img
+                src="https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/gmail.png"
+                alt="gmail logo"
+              />
               <div>GMail</div>
             </div>
           </a>
