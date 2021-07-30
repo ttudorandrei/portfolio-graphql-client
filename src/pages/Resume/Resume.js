@@ -18,7 +18,7 @@ const Resume = () => {
         <div className="d-flex justify-content-center mt-3">
           {/* Download Resume Icon*/}
           <a
-            href="../assets/doc/tudor-andrei-tocan-resume.pdf"
+            href="./public/assets/doc/tudor-andrei-tocan-resume.pdf"
             download="Tudor Andrei Tocan - Resume"
             className="text-center"
           >

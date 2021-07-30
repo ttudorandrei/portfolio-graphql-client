@@ -13,7 +13,7 @@ const RepoCard = ({ repo }) => {
         <div className="card p-1 m-4 text-center text-light project-card">
           {/* project image */}
           <img
-            src={`assets/img/${repo.repoName}.png`}
+            src={`./public/assets/img/${repo.repoName}.png`}
             className="card-img-top"
             alt="..."
           />

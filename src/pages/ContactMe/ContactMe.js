@@ -19,7 +19,7 @@ const ContactMe = () => {
             target="_blank"
           >
             <div className="text-center mt-5">
-              <img src="../assets/img/linkedin.png" alt="linkedin logo" />
+              <img src="./public/assets/img/linkedin.png" alt="linkedin logo" />
               <div>LinkedIn</div>
             </div>
           </a>
@@ -31,7 +31,10 @@ const ContactMe = () => {
             target="_blank"
           >
             <div className="text-center mt-5">
-              <img src="../assets/img/github-logo-dark.png" alt="github logo" />
+              <img
+                src="./public/assets/img/github-logo-dark.png"
+                alt="github logo"
+              />
               <div>GitHub</div>
             </div>
           </a>
@@ -39,7 +42,7 @@ const ContactMe = () => {
           {/* Gmail Logo */}
           <a href="mailto:tudor.tocan@gmail.com">
             <div className="text-center my-5">
-              <img src="../assets/img/gmail.png" alt="gmail logo" />
+              <img src="./public/assets/img/gmail.png" alt="gmail logo" />
               <div>GMail</div>
             </div>
           </a>
