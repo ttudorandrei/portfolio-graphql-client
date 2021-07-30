@@ -1,9 +1,6 @@
+// this wil format repo name, replacing the underscores to dashes
 const formatRepoNameForImage = (string) => {
-  console.log(string);
-
   const formattedString = string.split("_").join("-");
-
-  console.log(formattedString);
 
   return formattedString;
 };

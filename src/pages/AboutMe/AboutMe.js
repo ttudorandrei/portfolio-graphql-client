@@ -2,7 +2,7 @@ import { Fade } from "react-reveal";
 
 const AboutMe = ({ user }) => {
   return (
-    <div className="position-absolute top-50 start-50 translate-middle container d-flex align-items-center flex-column my-5 h-100">
+    <div className="position-absolute top-50 start-50 translate-middle container d-flex align-items-center flex-column my-5 h-75">
       <Fade>
         <div className="row container d-flex justify-content-evenly align-items-center a mt-5 h-75">
           <div className="col-md-4 d-flex flex-lg-row align-items-center mt-5">

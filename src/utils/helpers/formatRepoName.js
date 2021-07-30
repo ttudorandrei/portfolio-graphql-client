@@ -1,3 +1,4 @@
+// this will replace all underscores with a space and change first letter of the word to uppercase
 const formatRepoName = (string) => {
   const formattedString = string
     .split("_")

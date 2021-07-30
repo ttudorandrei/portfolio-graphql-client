@@ -1,16 +1,17 @@
 import { gql, useQuery } from "@apollo/client";
 import { Switch, Route } from "react-router-dom";
 
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import ContactMe from "./pages/ContactMe/ContactMe";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import Resume from "./pages/Resume/Resume";
 
 import "./Spinner.css";
 import "./App.css";
-import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
-import Resume from "./pages/Resume/Resume";
 
+// GQL query that gets data from github
 const USER_QUERY = gql`
   query Query {
     user {
@@ -40,8 +41,10 @@ const USER_QUERY = gql`
 `;
 
 const App = () => {
+  // destructuring loading, error and data from useQuery hook
   const { loading, error, data } = useQuery(USER_QUERY);
 
+  // if the data is still loading we are rendering a spinner
   if (loading) {
     return (
       <div>
@@ -50,6 +53,7 @@ const App = () => {
     );
   }
 
+  // if we get an error we render an error message
   if (error) {
     return (
       <div>
@@ -58,6 +62,7 @@ const App = () => {
     );
   }
 
+  // if the data has finished loading we render our app
   return (
     <div className="d-flex flex-column">
       <Switch>

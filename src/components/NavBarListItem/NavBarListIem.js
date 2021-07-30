@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const NavBarListItem = () => {
+  // styles for active button
   const activeStyleSettings = {
     color: "#fff",
     borderRadius: "20px",
@@ -9,6 +10,7 @@ const NavBarListItem = () => {
       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   };
 
+  // array of links in navbar
   const navbarLinks = [
     { link: "/about-me", name: "About Me" },
     { link: "/contact-me", name: "Contact Me" },
@@ -16,6 +18,7 @@ const NavBarListItem = () => {
     { link: "/resume", name: "Resume" },
   ];
 
+  // mapping through the navbar links array and creating a list item for each oane
   return navbarLinks.map((link) => {
     return (
       <li className="nav-item text-center navbar-button-style" key={link.name}>

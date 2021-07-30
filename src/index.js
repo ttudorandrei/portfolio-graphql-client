@@ -8,11 +8,13 @@ import NavigationBar from "./components/NavigationBar/NavigationBar";
 
 import "./index.css";
 
+// getting data from GQL server
 const client = new ApolloClient({
   uri: process.env.GRAPHQL_URL || "http://localhost:4000",
   cache: new InMemoryCache(),
 });
 
+// rendering the page with the router and apollo provider
 ReactDOM.render(
   <React.StrictMode>
     <Router>
