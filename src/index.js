@@ -10,8 +10,7 @@ import "./index.css";
 
 // getting data from GQL server
 const client = new ApolloClient({
-  uri:
-    "https://tudor-tocan-portfolio.herokuapp.com/" || "http://localhost:4000",
+  uri: process.env.GRAPHQL_URL || "http://localhost:4000",
   cache: new InMemoryCache(),
 });
 
