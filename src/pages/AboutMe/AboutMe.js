@@ -24,13 +24,14 @@ const AboutMe = ({ user }) => {
               </h5>
               <h3 className="mt-4 w-100">
                 I really like working with
-                <span className="highlight"> JavaScript</span> and
-                <span className="highlight"> ReactJS</span> on the frontend, I
+                <span className="highlight"> JavaScript </span>and
+                <span className="highlight"> ReactJS </span>on the frontend, I
                 use
-                <span className="highlight"> ExpressJS</span> as the server-side
-                framework and <span className="highlight">MongoDB </span>
+                <span className="highlight"> ExpressJS </span>and{" "}
+                <span className="highlight"> GraphQL </span>server-side and
+                <span className="highlight"> MongoDB </span>
                 or
-                <span className="highlight"> MySQL</span> as the database but
+                <span className="highlight"> MySQL </span>as the database but
                 I`m always down to learning new technologies.
               </h3>
               <h5 className="my-4 w-75">

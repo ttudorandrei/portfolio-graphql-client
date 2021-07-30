@@ -13,7 +13,8 @@ const RepoCard = ({ repo }) => {
         <div className="card p-1 m-4 text-center text-light project-card">
           {/* project image */}
           <img
-            src={`https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/${repo.repoName}.png`}
+            // src={`https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/${repo.repoName}.png`}
+            src={`/assets/img/${repo.repoName}.png`}
             className="card-img-top"
             alt="..."
           />
@@ -30,7 +31,7 @@ const RepoCard = ({ repo }) => {
           <div className="card-body">
             {/* repo description */}
             <div className="card-text">{repo.repoDescription}</div>
-            <div className="card-text mt-3">
+            <div className="card-text mt-3 d-flex flex-wrap justify-content-center">
               <div className="m-3">
                 {/* repo deployed url */}
                 <a
@@ -42,6 +43,7 @@ const RepoCard = ({ repo }) => {
                   <div>Deployed link</div>
                 </a>
               </div>
+
               <div className="m-3">
                 {/* github link */}
                 <a

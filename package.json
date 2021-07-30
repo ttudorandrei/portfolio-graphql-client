@@ -2,7 +2,7 @@
   "name": "portfolio-graphql-client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ttudorandrei.github.io/portfolio-graphql-client",
+  "homepage": "https://ttudorandrei.github.io/",
   "dependencies": {
     "@apollo/client": "^3.3.21",
     "@testing-library/jest-dom": "^5.11.4",

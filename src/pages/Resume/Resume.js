@@ -18,12 +18,12 @@ const Resume = () => {
         <div className="d-flex justify-content-center mt-3">
           {/* Download Resume Icon*/}
           <a
-            href="https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/doc/tudor-andrei-tocan-resume.pdf"
+            href="/assets/doc/tudor-andrei-tocan-resume.pdf"
             download="Tudor Andrei Tocan - Resume"
             className="text-center"
           >
             <img
-              src="https://github.com/ttudorandrei/portfolio-graphql-client/tree/main/public/assets/img/resume-icon.png"
+              src="/assets/img/resume-icon.png"
               alt="download my resume"
             ></img>
             <div className="highlight">Download Here</div>
