@@ -37,3 +37,15 @@ WHEN I load the "Resume" page I am presented with a list of Skills as well as a 
 ```
 
 ## Screenshots
+
+About Me Page
+![About Me Page](/public/assets/img/portfolio-about-me.png)
+
+Contact Me Page
+![Contact Me Page](/public/assets/img/portfolio-contact-me.png)
+
+Projects Page
+![Projects Page](/public/assets/img/portfolio-projects.png)
+
+Resume Page
+![Resume Page](/public/assets/img/portfolio-resume.png)
