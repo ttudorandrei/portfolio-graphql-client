@@ -17,12 +17,12 @@ const client = new ApolloClient({
 // rendering the page with the router and apollo provider
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/">
-      <ApolloProvider client={client}>
+    <ApolloProvider client={client}>
+      <Router basename="/">
         <NavigationBar />
         <App />
-      </ApolloProvider>
-    </Router>
+      </Router>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
